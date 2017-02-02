@@ -35,7 +35,7 @@
      (insert result))))))
 
 ;;within org-mode, Ctrl-Shift-v key pastes current clipboard to the buffer.
+
+(require 'org);; this is not lazy.(= increased startup time)
 (define-key org-mode-map (kbd "C-S-v") 'org-insert-image-from-clipboard)
 
-;;within markdown-mode, Ctrl-Shift-v key pastes current clipboard to the buffer.
-(define-key markdown-mode-map (kbd "C-S-v") 'markdown-insert-image-from-clipboard)

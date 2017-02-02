@@ -11,3 +11,6 @@ backups
 elpa/archives
 *.swp
 elpa
+
+# seems `url` dir is used by eww.
+url

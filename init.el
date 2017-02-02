@@ -107,7 +107,6 @@
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-
 ;;;;
 ;; Customization
 ;;;;
@@ -141,9 +140,14 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 
-(add-to-list 'load-path "~/.emacs.d/customizations/windows")
-(load "init-windows.el")
 
+(setq org-agenda-files '("~/org"))
+;; to include all files with a certain extension in the extra files list
+;; sa-find-org-file-recursively ( github stackoverflow somewhere ... if sometime later needs )
+;; (setq org-agenda-text-search-extra-files ... )
+
+
+(put 'dired-find-alternate-file 'disabled nil)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -152,10 +156,16 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (markdown-toc simple-httpd org-download org-ac markdown-mode tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (org-agenda-property tramp-term tagedit smex simple-httpd rainbow-delimiters projectile paredit org-download org-ac markdown-toc magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider aurora-config-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(load "download-file.el")
+(load "markdown-csv-to-table.el")
+(load "org-insert-image-from-clipboard.el")
+(load "org-insert-src-block.el")
+(load "orgtbl-to-gfm.el")
