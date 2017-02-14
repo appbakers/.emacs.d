@@ -106,6 +106,8 @@
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
+(load "init-fix-emacs25bug.el")
+(load "init-org2blog.el")
 
 ;;;;
 ;; Customization
@@ -156,7 +158,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (org-agenda-property tramp-term tagedit smex simple-httpd rainbow-delimiters projectile paredit org-download org-ac markdown-toc magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider aurora-config-mode))))
+    (htmlize org2blog metaweblog xml-rpc org-publish-agenda o-blog org-blog org-agenda-property tramp-term tagedit smex simple-httpd rainbow-delimiters projectile paredit org-download org-ac markdown-toc magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider aurora-config-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -169,3 +171,4 @@
 (load "org-insert-image-from-clipboard.el")
 (load "org-insert-src-block.el")
 (load "orgtbl-to-gfm.el")
+
