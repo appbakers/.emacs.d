@@ -142,6 +142,9 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 
+;; Inputmethod-specific
+(load "setup-inputmethod.el")
+
 
 (setq org-agenda-files '("~/org"))
 ;; to include all files with a certain extension in the extra files list
