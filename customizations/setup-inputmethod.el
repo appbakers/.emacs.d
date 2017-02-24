@@ -58,6 +58,8 @@
 )
 
 (prefer-coding-system 'utf-8)
-(global-set-key (kbd "S-SPC") 'toggle-input-method)   ;; Debian GNU/Linux에서
+;;(global-set-key (kbd "S-SPC") 'toggle-input-method)   ;; Debian GNU/Linux에서
 ;;(global-set-key (kbd "s-SPC") 'toggle-input-method)   ;; OS X에서 emacs(cocoa)용
 ;;(global-set-key (kbd "A-SPC") 'toggle-input-method)   ;; OS X에서 aquamacs용
+
+(global-set-key (kbd "<Hangul>") 'toggle-input-method)  ;; <Hangul> key for only emacs;;; <S-SPC> is for global change

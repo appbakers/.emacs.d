@@ -163,7 +163,7 @@
  '(default-input-method "korean-hangul")
  '(package-selected-packages
    (quote
-    (ztree htmlize org2blog metaweblog xml-rpc org-publish-agenda o-blog org-blog org-agenda-property tramp-term tagedit smex simple-httpd rainbow-delimiters projectile paredit org-download org-ac markdown-toc magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider aurora-config-mode))))
+    (ox-pandoc ztree htmlize org2blog metaweblog xml-rpc org-publish-agenda o-blog org-blog org-agenda-property tramp-term tagedit smex simple-httpd rainbow-delimiters projectile paredit org-download org-ac markdown-toc magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider aurora-config-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
