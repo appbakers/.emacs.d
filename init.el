@@ -141,3 +141,25 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 
+
+;; eclim
+(load "my-eclim.el")
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(eclim-eclipse-dirs (quote ("~/opt/eclim/eclipse")))
+ '(eclim-executable "~/opt/eclim/eclipse/eclim")
+ '(package-selected-packages
+   (quote
+    (company-emacs-eclim company auto-complete-auctex ac-emacs-eclim tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
