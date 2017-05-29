@@ -143,7 +143,7 @@
 
 
 ;; eclim
-(load "my-eclim.el")
+(load "eclim.el")
 
 
 (custom-set-variables
