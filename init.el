@@ -76,7 +76,11 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+    
+    ;; emacs-eclim
+    emacs-eclim
+    ))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -143,7 +147,7 @@
 
 
 ;; eclim
-(autoload 'eclim-mode "setup-eclim.el")
+(autoload 'eclim-project-mode "setup-eclim.el")
 
 
 (custom-set-variables
