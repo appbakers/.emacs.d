@@ -143,7 +143,7 @@
 
 
 ;; eclim
-(load "eclim.el")
+(autoload 'eclim-mode "setup-eclim.el")
 
 
 (custom-set-variables
